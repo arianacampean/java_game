@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domeniu.Jucator"
+           table="Jucator">
+        <id name="id" column="id_juc" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="username"
+                column="username"
+                type="string"/>
+
+        <property
+                name="parola"
+                column="parola"
+                type="string"/>
+
+
+    </class>
+</hibernate-mapping>

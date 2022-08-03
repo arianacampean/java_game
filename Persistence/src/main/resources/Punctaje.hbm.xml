@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="domeniu.Punctaje"
+           table="Punctaje">
+        <id name="id" column="id" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="id_jucator_trimite"
+                column="id_juc_trimite"
+                type="int"/>
+        <property
+                name="id_jucator_primeste"
+                column="id_juc_primeste"
+                type="int"/>
+        <property
+                name="pozitie"
+                column="pozitie"
+                type="int"/>
+        <property
+                name="punctaj"
+                column="punctaj"
+                type="int"/>
+        <property
+                name="runda"
+                column="runda"
+                type="int"/>
+
+
+
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartPageC">
+   <children>
+      <Button fx:id="but" disable="true" layoutX="383.0" layoutY="109.0" mnemonicParsing="false" onAction="#start_but" text="Start joc" />
+      <TextField fx:id="nume" disable="true" layoutX="25.0" layoutY="25.0" />
+      <Button layoutX="29.0" layoutY="348.0" mnemonicParsing="false" onAction="#logout" text="logOut" />
+      <Label layoutX="360.0" layoutY="29.0" text="Introdu pozitiile tale" />
+      <TextField fx:id="poz1" layoutX="273.0" layoutY="67.0" prefHeight="25.0" prefWidth="76.0" />
+      <TextField fx:id="poz2" layoutX="375.0" layoutY="67.0" prefHeight="25.0" prefWidth="76.0" />
+      <TextField fx:id="poz3" layoutX="492.0" layoutY="67.0" prefHeight="25.0" prefWidth="76.0" />
+      <Label fx:id="pozitii_label" layoutX="48.0" layoutY="172.0" text="pozitiile jucatorilor:" />
+      <TextField fx:id="poz_noua" layoutX="430.0" layoutY="307.0" prefHeight="25.0" prefWidth="92.0" />
+      <ListView fx:id="listView" layoutX="330.0" layoutY="199.0" prefHeight="92.0" prefWidth="200.0" />
+      <Label layoutX="334.0" layoutY="311.0" text="pozitia propusa" />
+      <Label layoutX="379.0" layoutY="164.0" text="alege jucator" />
+      <Button layoutX="403.0" layoutY="348.0" mnemonicParsing="false" onAction="#trimite_poz" text="trimite" />
+      <Label fx:id="ultima" layoutX="78.0" layoutY="125.0" prefHeight="17.0" prefWidth="0.0" />
+      <Button layoutX="98.0" layoutY="291.0" mnemonicParsing="false" onAction="#runda_noua" text="RundaNoua" />
+   </children>
+</AnchorPane>
